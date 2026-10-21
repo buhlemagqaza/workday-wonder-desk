@@ -48,10 +48,10 @@ function Index() {
           <Link key={to} to={to} className="group rounded-2xl border bg-card p-6 shadow-card transition hover:-translate-y-0.5 hover:border-primary/40">
             <div className="flex items-center justify-between">
               <div className="grid h-11 w-11 place-items-center rounded-xl bg-highlight text-primary"><Icon className="h-5 w-5" /></div>
-              <span className="rounded-full bg-muted px-2.5 py-1 text-[11px] font-medium text-muted-foreground">{BLURBS[to].saves}</span>
+              <span className="rounded-full bg-muted px-2.5 py-1 text-[11px] font-medium text-muted-foreground">{BLURBS[to]?.saves}</span>
             </div>
             <h3 className="mt-4 text-xl font-semibold">{label}</h3>
-            <p className="mt-1 text-sm text-muted-foreground">{BLURBS[to].text}</p>
+            <p className="mt-1 text-sm text-muted-foreground">{BLURBS[to]?.text}</p>
             <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary">
               Open <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
             </span>

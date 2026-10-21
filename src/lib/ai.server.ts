@@ -79,7 +79,7 @@ ${GUARDRAILS}`,
 };
 
 export async function handleAi(request: Request) {
-  const apiKey = process.env.LOVABLE_API_KEY;
+  const apiKey = process.env["LOVABLE_API_KEY"];
   if (!apiKey) return new Response("AI is not configured.", { status: 500 });
 
   let body: { feature?: string; messages?: { role: "user" | "assistant"; content: string }[] };

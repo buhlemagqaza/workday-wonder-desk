@@ -24,7 +24,7 @@ type Props = {
 export function ToolPage(p: Props) {
   const [input, setInput] = useState("");
   const [extra, setExtra] = useState("");
-  const [option, setOption] = useState(p.options?.choices[0].value ?? "");
+  const [option, setOption] = useState(p.options?.choices[0]?.value ?? "");
   const [output, setOutput] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");

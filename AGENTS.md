@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- All AI calls go through the single streaming route /api/ai; per-feature system prompts and shared guardrails live in src/lib/ai.server.ts so prompts stay server-side and consistent.
